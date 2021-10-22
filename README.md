@@ -1,46 +1,39 @@
-# Getting Started with Create React App
+This project is a basic example of using Mobx as state management with typescript template in React.</br>
+This project has 4 pages:</br>
+1)<b>Home</b> – This is the first page shown on load and employees can be registered via this page.
+![image](https://user-images.githubusercontent.com/37818821/138383902-2878ca77-42f2-4481-917c-e4db5c0395eb.png)
+ 
+2)<b>Employee List</b> – This page shows the list of registered employees
+ ![image](https://user-images.githubusercontent.com/37818821/138383928-5c87abb3-6b82-43ee-b72a-900188bd99a4.png)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+3)<b>Employee Details</b> – This page shows the details of selected employee
+![image](https://user-images.githubusercontent.com/37818821/138383948-e21c1cb9-b109-4985-9a51-72568429d814.png)
+ 
+4)<b>About</b> – pseudo page. Do not have much content.
+![image](https://user-images.githubusercontent.com/37818821/138383960-86f4c182-7d02-4d34-bc22-3015b8c5a26f.png)
 
-## Available Scripts
+Very first thing is install additional components :</br>
+1)Install mobx – I have used Mobx for state management.</br>
+	<b>npm install mobx</b></br>
+2)Install mobx-react</br>
+	<b>npm install mobx-react</b></br>
+3)Install react-bootstrap</br>
+	<b>npm install react-bootstrap</b></br>
+4)Install react-router-dom – this is to use routing in react. </br>
+	<b>npm install react-router-dom</b></br>
+  
+Important step is to create a store </br>
 
-In the project directory, you can run:
+![image](https://user-images.githubusercontent.com/37818821/138385001-73ba5bcf-b364-4144-91f4-ef0d2b5d7266.png)
 
-### `npm start`
+ and then create a context for the above store to use in App.tsx, so that we can use the store all over the app</br>
+ 
+ ![image](https://user-images.githubusercontent.com/37818821/138385133-f0f5c5bb-c8e4-4adf-9e6f-1db2f75b10e2.png)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+ 
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
